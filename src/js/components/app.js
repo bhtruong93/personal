@@ -1,10 +1,15 @@
 import React from "react";
 import AppActions from "../action/app-actions";
+import Catelog from "./app-catelog";
+import Cart from "./app-cart"
 
 export default class App extends React.Component {
   render() {
-    return <h1 onClick= {AppActions.addItem.bind(null, "this is the item")}>
-    A flux APP
-           </h1>
+    return (
+      <div className="container">
+        <Catelog />
+        <Cart />
+      </div>
+    )
   }
 }
