@@ -1,7 +1,7 @@
 import React from "react";
 import AppActions from "../action/app-actions";
-import Catelog from "./app-catelog";
-import Cart from "./app-cart"
+import Catelog from "./catelog/app-catelog";
+import Cart from "./cart/app-cart"
 
 export default class App extends React.Component {
   render() {

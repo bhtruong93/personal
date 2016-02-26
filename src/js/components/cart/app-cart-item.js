@@ -1,6 +1,6 @@
 import React from "react";
 import CartButton from "./app-cart-button";
-import Applications from "../action/app-actions";
+import AppActions from "../../action/app-actions";
 
 export default (props) => {
   return (
@@ -8,8 +8,7 @@ export default (props) => {
       <td>
         <CartButton
           txt="x"
-          handler={AppActions.removeItem.bind(null, props.item)
-          }/>
+          handler={AppActions.removeItem.bind(null, props.item)}/>
       </td>
       <td>{props.item.title}</td>
       <td>{props.item.qty}</td>

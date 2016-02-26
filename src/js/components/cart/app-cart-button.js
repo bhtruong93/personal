@@ -4,7 +4,7 @@ export default (props) => {
   return (
     <button
       className="btn btn-default btn-sm"
-      onCLick={ props.handler }>
+      onClick={ props.handler }>
         { props.txt }
     </button>
   )
