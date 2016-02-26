@@ -1,5 +1,5 @@
 import React from "react";
-import AppStore from "../..stores/app-store";
+import AppStore from "../../stores/app-store";
 import StoreWatchMixin from "../../mixins/StoreWatchMixin";
 import { Link } from "react-router";
 
@@ -11,6 +11,6 @@ const CartSummary = ( props ) => {
       </Link>
     </div>
   )
-}
+};
 
-export defalt StoreWatchMixin(CartSummary, AppStore.getCartTotals);
+export default StoreWatchMixin(CartSummary, AppStore.getCartTotals);
